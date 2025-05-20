@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMW Themed Portfolio</title>
+<style>
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1c1f2a;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #0072ce;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #dadada;
+}
+
+/* Hero Image Text */
+.hero {
+  position: relative;
+  margin-top: 60px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  color: white;
+background-color:rgba(0,0,0,0.5);
+padding:20px;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Centered Styled Image */
+.center-image-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.styled-image {
+  width: 60%;
+  filter: grayscale(40%);
+  border-radius: 15px;
+}
+
+/* Table */
+.table-section {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #0072ce;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+}
+
+td, th {
+  border: 1px solid #fff;
+}
+
+/* Columns */
+.columns {
+  display: flex;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.column {
+  flex: 1;
+  color: #dadada;
+  height: 200px;
+  width: 50%;
+}
+
+/* Paragraph Hover */
+.hover-section p {
+  padding: 20px;
+  text-align: center;
+  background-color: #0072ce;
+  transition: 0.3s;
+}
+
+.hover-section p:hover {
+  background-color: #004080;
+}
+
+/* Overlay Image */
+.overlay-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.overlay-container img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-container:hover .overlay-text {
+  opacity: 1;
+}
+
+/* Video with Text */
+.video-section {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.video-section video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video-overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #0072ce;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+</nav>
+
+<!-- Hero Image with Text -->
+<section class="hero">
+  <img src="https://cdn.pixabay.com/photo/2019/08/09/06/12/car-racing-4394450_1280.jpg" alt="BMW Car" class="hero-image">
+  <div class="hero-text">Drive the Future: Portfolio Influnced by BMW</div>
+</section>
+
+<!-- Centered Image with Filter and Rounded Edges -->
+<section class="center-image-section">
+  <h2>BMW Design</h2>
+  <img src="https://cdn.pixabay.com/photo/2016/05/02/23/43/acronym-bmw-1368279_1280.jpg" class="styled-image" alt="BMW">
+</section>
+
+<!-- Table -->
+<section id="about" class="table-section">
+  <h2>Car Models</h2>
+  <table>
+    <tr>
+      <th>Model</th>
+      <th>Year</th>
+      <th>Engine</th>
+    </tr>
+    <tr>
+      <td>M3</td>
+      <td>2023</td>
+      <td>3.0L I6</td>
+    </tr>
+    <tr>
+      <td>M5</td>
+      <td>2022</td>
+      <td>4.4L V8</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Two Column Layout -->
+<section class="columns">
+  <div class="column">BMW's engineering sets the standard for performance and luxury.</div>
+  <div class="column">Experience ultimate driving pleasure through innovative design.</div>
+</section>
+
+<!-- Paragraph with Hover -->
+<section id="projects" class="hover-section">
+  <p>Hover over this text to see the effect!</p>
+</section>
+
+<!-- Image Overlay Fade -->
+<section class="overlay-section">
+  <div class="overlay-container">
+    <img src="https://cdn.pixabay.com/photo/2022/03/02/15/19/wheel-7043351_1280.jpg" alt="BMW Overlay">
+    <div class="overlay-text">Precision Engineering</div>
+  </div>
+</section>
+
+<!-- Video with Autoplay, Mute, Loop -->
+<section class="video-section">
+  <video autoplay muted loop>
+    <source src="https://cdn.pixabay.com/video/2025/02/22/260336_tiny.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="video-overlay-text">BMW in Motion</div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 BMW Portfolio - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
